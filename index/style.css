@@ -1,0 +1,33 @@
+h1 {
+    color: #27262b;
+    font-size: 30px;
+    margin: 0px;
+    margin-bottom: 8px;
+}
+h2{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+header {
+    border-bottom: 1px solid #c5c3d3;
+}
+
+p {
+    font-style: italic;
+}
+
+body{
+    font-family: "Times New Roman", Georgia, Serif;
+    margin-left: 20px;
+}
+
+main {
+    margin-left: 20px;
+
+}
+
+section{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
