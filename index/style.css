@@ -9,20 +9,41 @@ h2{
     margin-top: 0px;
     margin-bottom: 10px;
 }
-header {
-    border-bottom: 1px solid #c5c3d3;
-}
 
-p {
-    font-style: italic;
+h3 {
+    margin: 20px;
+    text-decoration: underline;
+}
+header {
+    margin: 15px;
 }
 
 body{
     font-family: "Times New Roman", Georgia, Serif;
     margin-left: 20px;
     color: #5a5a74;
-    background-color: #c9c9f6;
+    background-color: #faf4d3;
 }
+
+nav ul {
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid #c5c3d3;
+    border-bottom: 1px solid #c5c3d3;
+}
+
+nav ul li {
+    list-style-type: none; 
+    flex-flow: row wrap;
+    margin: 5px;
+    text-align: center;
+    padding: 5px;
+    /*border: 1px solid; */
+
+}
+
 
 main {
     margin-left: 20px;
@@ -34,18 +55,24 @@ main {
 #app-controls {
     display: none;
 }
-/*
-#note-output p {
+
+#note-output {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    row-gap: 10px;
+    text-align: center; 
+} 
 
-} */
+#note-output p {
+    border: 1px solid #282829;
+    margin: 5px;
+    padding: 10px;
+}
 
-#note-output button{
-    padding: 2px;
+button {
+    padding: 5px;
     margin: 5px;
     border: 1px solid #282829;
-    flex: 1 25%;
 }
 
