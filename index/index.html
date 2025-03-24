@@ -10,17 +10,26 @@
         <header>
             <h1>COMP 423 Note Page</h1>
         </header>
-        <p> Add Notes Below! </p> 
-        <main>
+
+        <main id="page-content">
+            <p> Add Notes Below! </p> 
             
-            <section class="input-note"> 
-               
+            <section id="app-input" class="app-content"> 
                 <h2>Add Note</h2>
-                <input type="text" id="input-note" placeholder="Enter a note">
+                <input type="text" id="input-note" />
                 <button id="add-note">Add</button>
+                
             </section>
 
-            <section class="note-output"></section>
+            <section id="app-output" class="app-content">
+                <h4>note output</h4>
+                <section id="note-output">
+                </section>
+            </section>
+
+            <section id ="app-controls" class="app-content">
+                <button id="notes-delete" class="delete-all">Delete all</button>
+            </section>
 
         </main>
 

@@ -1,8 +1,9 @@
 h1 {
-    color: #27262b;
+    color: #2a2151;
     font-size: 30px;
     margin: 0px;
     margin-bottom: 8px;
+    text-align: center;
 }
 h2{
     margin-top: 0px;
@@ -19,15 +20,32 @@ p {
 body{
     font-family: "Times New Roman", Georgia, Serif;
     margin-left: 20px;
+    color: #5a5a74;
+    background-color: #c9c9f6;
 }
 
 main {
     margin-left: 20px;
+    text-align: center;
+    display: grid;
 
 }
 
-section{
-    padding-top: 10px;
-    padding-bottom: 10px;
+#app-controls {
+    display: none;
+}
+/*
+#note-output p {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+} */
+
+#note-output button{
+    padding: 2px;
+    margin: 5px;
+    border: 1px solid #282829;
+    flex: 1 25%;
 }
 
