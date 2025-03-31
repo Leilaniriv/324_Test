@@ -5,10 +5,19 @@
         <meta charset="utf-8">
         <title>Demo</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="grid.css">
     </head>
     <body>
+        <div class="wrapper">
+            <div class="banner">
+                <div class="logo">
+                    <img src="">
+                </div>
+            </div>
+
+        </div>
         <header>
-            <h1>COMP 423 Note Page</h1>
+            <h1>Travel Notes</h1>
         </header>
 
         <nav class="site-menu">
@@ -19,25 +28,37 @@
             </ul>
         </nav>
 
-        <main id="page-content">
+        <main class="site-content">
+            <div class="page-heading"> 
             <p> Add Notes Below! </p> 
-            
+
+            <!--note input-->
             <section id="app-input" class="app-content"> 
                 <h2>Add Note</h2>
                 <input type="text" id="input-note" />
-                <button id="add-note">Add</button>
-                
+                <button id="add-note">add</button>
             </section>
 
+            <!-- image search -->
+                <section class="image-search">
+                    <h5>image search</h5>
+	   	   		<input type="text" id="input-image" />
+	   	   		<button id="search-images">search</button>
+					</section>
+
+            <!--note controls-->
+            <section id ="note-controls" class="app-content">
+                <button id="notes-delete" class="delete-all">Delete all</button>
+            </section>
+
+            <!--note output-->
             <section id="app-output" class="app-content">
-                <h3>Note Output</h3>
+                <!--<h3>Note Output</h3> -->
                 <section id="note-output">
                 </section>
             </section>
+        </div>
 
-            <section id ="app-controls" class="app-content">
-                <button id="notes-delete" class="delete-all">Delete all</button>
-            </section>
 
         </main>
 
