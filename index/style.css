@@ -7,10 +7,16 @@ body{
 
 header {
     margin: 15px;
+    top: 0;
+}
+
+.page-heading {
+    margin: 15px; 
 }
 
 main {
     margin-left: 20px;
+    margin-top: 25px;
     text-align: center;
     display: grid;
 
@@ -36,11 +42,7 @@ nav ul li {
 }
 
 
-#app-controls {
-    display: none;
-}
-
-#note-output {
+.note-output {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -48,7 +50,7 @@ nav ul li {
     text-align: center; 
 } 
 
-#note-output p {
+.note-output p {
     border: 1px solid #282829;
     margin: 5px;
     padding: 10px;
