@@ -41,6 +41,18 @@ function createNote(input, output){
     if (inputVal !== ''){
         let p = document.createElement('p');
 
+        p.addEventListener('click', function() {
+            console.log('note = ', this);
+
+            let delButton = output.querySelectorAll('.note-delete');
+            if (checkExist(delButton) === true) {
+                for (let btn of delButton) {
+                    btn.style.display = 'none';
+                }
+            }
+            this.querySelector('.note-delete').style.display = 'inline';       
+        });
+
         let delButton = createButton('note-delete', 'delete');
 
 
@@ -51,13 +63,6 @@ function createNote(input, output){
             let notes = output.querySelectorAll('p');
             if (checkExist(notes) === false) {
                 controls.style.display = 'none';
-                // loop through notes and remove a single note per iteration...
-                /*
-                for (let note of notes) {
-                    // remove single node
-                    note.remove(); 
-                } */
-    
             }
         });
     

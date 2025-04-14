@@ -1,0 +1,72 @@
+@media print, screen and (max-width: 915px) {
+    /* grid - wrapper */
+    div.wrapper {
+        grid-template-rows: 80px auto 80px;
+        margin: 20px 10px 0 10px;
+    }
+    
+    div.banner {
+        grid-template-rows: 80px;
+        grid-template-areas:
+            "site-logo site-header"
+    }
+    
+    .site-header {
+        margin-right: 0;
+    }
+    
+    .banner-extras {
+        display: none;
+    }
+    
+    /* note input & image search */
+    .page-heading {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "add-note"
+            "search-images"
+            "note-controls";
+    }
+    
+    /* note input */
+    .note-input {
+        margin-right: 0;
+    }
+    
+    /* image search */
+    .image-search {
+        margin-left: 0;
+    }
+    
+    /* card view */
+    .card-view {
+    }
+    
+    } 
+    /* end of 915px */
+    
+    /* Responsive
+    *  - 915px
+    *  - desktop to tablet
+    */
+    @media print, screen and (max-width: 545px) {
+    
+    /* grid - wrapper */
+    div.wrapper {
+        grid-template-rows: 80px auto;
+        margin: 5px 0 0 0;
+    }
+        
+    /* hide by default */
+    .note-controls {
+        display: none;
+    }
+    
+    /* hide footer by default */
+    .site-footer {
+        display: none;
+    }
+    
+    
+    }
+    

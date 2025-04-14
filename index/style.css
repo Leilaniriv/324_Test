@@ -1,28 +1,19 @@
-h1 {
-    color: #2a2151;
-    font-size: 30px;
-    margin: 0px;
-    margin-bottom: 8px;
-    text-align: center;
-}
-h2{
-    margin-top: 0px;
-    margin-bottom: 10px;
-}
-
-h3 {
-    margin: 20px;
-    text-decoration: underline;
-}
-header {
-    margin: 15px;
-}
-
 body{
     font-family: "Times New Roman", Georgia, Serif;
     margin-left: 20px;
     color: #5a5a74;
     background-color: #faf4d3;
+}
+
+header {
+    margin: 15px;
+}
+
+main {
+    margin-left: 20px;
+    text-align: center;
+    display: grid;
+
 }
 
 nav ul {
@@ -45,12 +36,6 @@ nav ul li {
 }
 
 
-main {
-    margin-left: 20px;
-    text-align: center;
-    display: grid;
-
-}
 #app-controls {
     display: none;
 }
@@ -69,9 +54,28 @@ main {
     padding: 10px;
 }
 
+h1 {
+    color: #2a2151;
+    font-size: 30px;
+    margin: 0px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+h2{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin: 20px;
+    text-decoration: underline;
+}
+
 button {
     padding: 5px;
     margin: 5px;
     border: 1px solid #282829;
 }
+
+
 
