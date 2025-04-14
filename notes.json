@@ -1,0 +1,26 @@
+{
+    "notes": [{
+      "note": "a note from Cannes...",
+          "metadata": {
+                      "created": "Mon, 12 Oct 2015 14:22:49 GMT",
+                      "author": "daisy",
+                      "tags": "note, france, festival"
+                  }
+    }, {
+      "note": "a holiday note from Nice...",
+          "metadata": {
+                      "created": "Tues, 19 Sep 2017 13:01:10 GMT",
+                      "author": "emma",
+                      "tags": "note, france, markets"
+                  }
+    }, {
+      "note": "an autumn note from Antibes...",
+          "metadata": {
+                      "created": "Sun, 23 Jun 2019 20:07:03 GMT",
+                      "author": "daisy",
+                      "tags": "note, france, picasso"
+                  }
+    }]
+  }
+  
+  

@@ -20,6 +20,7 @@ function travelNotes(){
             createNote(inputNote, noteOutput);
         }
     });
+    
         deleteAll.addEventListener('click', () => {
             let notes = noteOutput.querySelectorAll('p');
             if (checkExist(notes) === true) {
