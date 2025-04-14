@@ -1,19 +1,29 @@
 div.wrapper {
 	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
-	grid-auto-rows:minmax(150px, auto)
+	grid-gap: 0;
+	grid-template-rows: 80px auto 80px;
+	grid-template-areas:
+		"site-banner"
+		"site-content"
+		"footer";
+	margin: 20px 5% 0 5%;
+	padding: 0;
+	height: calc(99vh - 20px);
 }
+
 
 .image-search {
 	grid-area: app-content;
 	margin: 10px 5px 0 0;
-	border: 1px solid #ccc;
 	padding: 0 20px 20px 20px;
 }
 
 .site-content {
 	grid-area: site-content;
 	display: grid;
+	grid-template-areas: 
+		"page-heading"
+		"content";
 }
 
 #note-controls{
