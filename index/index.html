@@ -36,30 +36,32 @@
             <p> Add Notes Below! </p> 
 
             <!-- note input -->
-            <section id="app-input" class="app-content"> 
+            <section id="note-input" class="note-input"> 
                 <h2>Add Note</h2>
                 <input type="text" id="input-note" />
                 <button id="add-note">add</button>
             </section>
 
-            <!-- image search -->
-                <section class="image-search">
-                    <h5>image search</h5>
-	   	   		<input type="text" id="input-image" />
-	   	   		<button id="search-images">search</button>
-					</section>
+            <!-- contextual choice -->
+             <section class="contextual-choice">
+                <h2>search flickr</h2>
+                <input>
+                <button>search</button>
+             </section>
+                
 
-            <!--note controls-->
-            <section id ="note-controls" class="app-content">
-                <button id="notes-delete" class="delete-all">Delete all</button>
+            <!--note controls - delete -->
+            <section id="note-controls" class ="note-controls">
+                <button id="notes-delete">Delete all</button>
             </section>
 
-            <!--note output-->
-            <section id="app-output" class="app-content">
+            <!--note output--> 
+            <section id="note-output" class="note-output" >
                 <!--<h3>Note Output</h3> -->
-                <section id="note-output">
-                </section>
+                <!--<section id="note-output"></section> -->
             </section>
+
+            <section class="contextual-output"></section>
         </main>
     </div>
 
@@ -67,7 +69,10 @@
         <p>app's copyright information, additional links...</p>
     </footer>
 
+    
     <script type="text/javascript" src="travel.js"></script>
+    <script type="text/javascript" src="index/contextual.js"></script>   
+    <script type="'text/javascript" src="index/jquery-2.1.4.min.js"></script>
 
     </body>
 </html>
