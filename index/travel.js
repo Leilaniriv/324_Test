@@ -33,11 +33,43 @@ function travelNotes(){
     });
 }
 
+function getNotes() {
+    let noteOutput = document.querySelector('.note-output');
+
+    // Add initial loader spinner for notes ajax...
+    noteOutput.innerHTML = '<img class="spinner" src="index/ajax-loader.gif">';
+
+    // Fetch JSON data and return a Promise
+    let deferredNotesRequest = fetch("index/notes.json")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        });
+
+    return deferredNotesRequest;
+}
+
+/* note handlers, builders... */
+
+function getNoteInput() {
+    // Define input field
+    let noteTextInput = document.querySelector('.note-input input');
+    let noteVal = "";
+
+    if (noteTextInput && noteTextInput.value !== "") {
+        noteVal = noteTextInput.value;
+    }
+
+    return noteVal;
+}
+
 
 function createNote(input, output){
     let inputVal = input.value;
 
-    let controls = document.getElementById('app-controls')
+    let controls = document.getElementById('note-controls') 
 
     if (inputVal !== ''){
         let p = document.createElement('p');
@@ -136,7 +168,6 @@ function fadeIn(node) {
   }
   
  travelNotes();
-  
 
 
        
