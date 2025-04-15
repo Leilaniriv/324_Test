@@ -11,13 +11,6 @@ div.wrapper {
 	height: calc(99vh - 20px);
 }
 
-
-.image-search {
-	grid-area: app-content;
-	margin: 10px 5px 0 0;
-	padding: 0 20px 20px 20px;
-}
-
 .site-content {
 	grid-area: site-content;
 	display: grid;
@@ -30,4 +23,31 @@ div.wrapper {
     grid-area: note-controls;
     margin: 10px 0 0 0;
     padding: 10px;
+}
+
+
+
+/* generic column styling */
+[class*="col-"] {
+    position: relative;
+    float:left;
+    padding:20px;
+    border: 1px solid #ccc;
+  }
+
+/* siblings to preceding column - specify gutter*/
+[class*="col-"] + [class*="col-"] {
+margin-left: 1.6%;
+}
+
+.col-1 {
+	width: 40%;
+}
+
+.col-2 {
+	width: 20%;
+}
+
+.col-3 {
+	width: 50%;
 }

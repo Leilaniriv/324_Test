@@ -19,7 +19,6 @@ main {
     margin-top: 25px;
     text-align: center;
     display: grid;
-
 }
 
 nav ul {
@@ -43,11 +42,10 @@ nav ul li {
 
 
 .note-output {
-    display: flex;
-    flex-flow: row wrap;
     justify-content: space-evenly;
     row-gap: 10px;
     text-align: center; 
+    margin: 10px 0 0 0;
 } 
 
 .note-output p {
@@ -79,5 +77,25 @@ button {
     border: 1px solid #282829;
 }
 
+/* contextual output images */
+.contextual-output img {
+    margin: 10px 0 0 0;
+    padding: 5px;
+    border: 1px solid #b1c4b1;
+}
+    
+.flex-container {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*justify-content: flex-start;*/
+    justify-content: space-around;
+}
+
+/* flex item */
+.flex-item {
+    flex-basis: 300px; /* default size before extra */
+    flex-grow: 1; /* all items will be equal */
+}
 
 

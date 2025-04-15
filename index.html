@@ -4,9 +4,9 @@
     <head>
         <meta charset="utf-8">
         <title>Demo</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="grid.css">
-        <link rel="stylesheet" href="responsive.css">
+        <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/styles/grid.css">
+        <link rel="stylesheet" type="text/css" href="assets/styles/responsive.css">
     </head>
     <body>
         <div class="wrapper">
@@ -18,7 +18,6 @@
         <!-- document header -->
         <header>
             <h1>Travel Notes</h1>
-        
 
         <nav class="site-menu">
             <ul>
@@ -36,32 +35,32 @@
             <p> Add Notes Below! </p> 
 
             <!-- note input -->
-            <section id="note-input" class="note-input"> 
-                <h2>Add Note</h2>
+            <section id="note-input" class="note-input col-1"> 
+                <h2>add note</h2>
                 <input type="text" id="input-note" />
                 <button id="add-note">add</button>
             </section>
 
-            <!-- image search -->
-					<section class="image-search">
-						<h5>image search</h5>
-						<div class="input-group">
-	   	   			<input type="text" id="input-image" />
-	   	   			<button id="search-images">search</button>
-						</div>
-					</section>
+            <!-- contextual choice -->
+            <section class="contextual-choice col-1">
+                <h2> search flickr </h2>
+                <input>
+                <button>search</button>
+            </section>
 
                 
 
             <!--note controls - delete -->
-            <section id="note-controls" class ="note-controls">
+            <section id="note-controls" class ="note-controls col-2">
                 <button id="notes-delete">Delete all</button>
             </section>
 
             <!--note output--> 
-            <section id="note-output" class="note-output" >
+            <section id="note-output" class="note-output col-3" >
                 <!--<h3>Note Output</h3> -->
             </section>
+
+            <section class="contextual-output col-3 flex-container"></section>
 
         </main>
     
@@ -73,9 +72,11 @@
 
 
     
-    <script type="text/javascript" src="travel.js"></script>
-    <script type="text/javascript" src="index/contextual.js"></script>   
-    <script type="'text/javascript" src="index/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/travel.js"></script>  
+    <script type="text/javascript" src="assets/scripts/notes.js"></script>
+    <script type="text/javascript" src="assets/scripts/contextual.js"></script>   
+    
 
     </body>
 </html>
